@@ -60,19 +60,22 @@ table {
     src: url(fonts/BYEKAN.TTF);
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: black;
+}
+
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .header {
-    background-color: white;
-    box-shadow: 0 0 15px 0 rgb(18, 190, 18);
+    background-color: black;
+    box-shadow: 0 0 15px 0 aqua;
     height: 10vh;
     width: 40vw;
     position: fixed;
