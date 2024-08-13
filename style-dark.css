@@ -83,7 +83,7 @@ a {
     z-index: 1;
     bottom: 5vh;
     border-radius: 20px;
-    align-content: center;
+    /* align-content: center; */
 }
 
 .menu {
@@ -91,6 +91,7 @@ a {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    height: inherit;
 }
 
 .menu a {
