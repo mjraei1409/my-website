@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: Byekan ;
+    src: url(fonts/BYEKAN.TTF);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color: black;
+    box-shadow: 0 0 15px 0 aqua;
+    height: 10vh;
+    width: 40vw;
+    position: fixed;
+    z-index: 1;
+    bottom: 5vh;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.menu a {
+    display: block;
+}
+
+.menu-link {
+    color: white;
+    font-weight: bold;
+    transition: all 1s;
+    align-content: center;
+    display: none;
+    font-family: Byekan;
+}
+
+.menu-items {
+    display: flex;
+    gap: 5px;
+    margin: auto;
+}
+
+.menu-items:hover .menu-link {
+    display: block;
+}
+
+.menu-items:hover {
+    /* transform: scale(1.1); */
+    transition: all 0.5s;
+    color: rgb(0, 218, 218);
+}
+
+.menu-icon {
+    width: 30px;
+    align-content: center;
+}
+
+.h1-home {
+    margin-top: 5vh;
+}
+
+.text-black {
+    color: white;
+    font-size: 1.5em;
+    font-family: Byekan;
+}
+
+.h1-text-green {
+    color: aqua;
+    font-size: 3em;
+    font-family: Byekan;
+    font-weight: bold;
+}
+
+.pictures-me {
+    width: 20vw;
+    border-top-left-radius: 50vw;
+    border-top-right-radius: 50vw;
+    margin: 5vh auto;
+    filter: blur(10px);
+}
+
+#works,
+#tools {
+    margin-top: 50vh;
+}
+
+#contact {
+    margin-top: 30vh;
+    text-align: center;
+    padding-bottom: 30vh;
+}
+
+.toole {
+    width: fit-content;
+    box-shadow: 0 0 25px 0 aqua;
+    display: inline-block;
+    margin: 20px;
+}
+
+.work {
+    width: fit-content;
+    box-shadow: 0 0 25px 0 aqua;
+    display: inline-block;
+    margin: 20px 1vw;
+    width: 30vw;
+}
+
+.img-work {
+    width: 30vw;
+}
+
+.text-work {
+    border-top: 5px solid aqua;
+    padding: 10px 0;
+}
+
+.img-toole {
+    width: 40vw;
+}
+
+.text-toole {
+    border-top: 5px solid aqua;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1-contact {
+    width: fit-content;
+    padding: 0 20px;
+    color: white;
+    font-family: Byekan;
+    font-size: 2em;
+    border-left: 5px aqua solid;
+    border-right: 5px aqua solid;
+    margin: auto;
+}
+
+.link-tools {
+    color: aqua;
+    font-family: Byekan;
+    margin: auto;
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.h1-darsad {
+    background-color: aqua;
+    font-size: 3em;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 0 50px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.input-darsad {
+    width: inherit;
+    height: 50px;
+    font-size: 2em;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.btn-darsad {
+    background-color: black;
+    color: aqua;
+    font-size: 2em;
+    font-family: Byekan;
+    width: 30vw;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 aqua;
+    margin: auto;
+}
+
+.btn-darsad:active{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+    .h1-text-green,
+    .h1-contact {
+        font-size: 1.5em;
+    }
+
+    .text-black {
+        font-size: 0.75em;
+    }
+
+    .link-tools {
+        font-size: 0.75em;
+    }
+
+    .img-toole {
+        width: 90vw;
+    }
+
+    .pictures-me {
+        width: 50vw;
+    }
+
+    #works {
+        margin-top: 20vh;
+        width: 100vw;
+    }
+    #tools {
+        margin-top: 20vh;
+    }
+
+    .header {
+        width: 90vw;
+    }
+
+    .work {
+        margin: 20px 0;
+        width: 70vw;
+    }
+
+    .img-work {
+        width: 70vw;
+    }
+
+    .work-centering-rspv {
+        width: 70vw;
+    }
+
+}
