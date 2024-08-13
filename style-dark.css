@@ -65,18 +65,14 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: black;
-}
-
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .header {
-    background-color: black;
-    box-shadow: 0 0 15px 0 aqua;
+    background-color: white;
+    box-shadow: 0 0 15px 0 rgb(18, 190, 18);
     height: 10vh;
     width: 40vw;
     position: fixed;
